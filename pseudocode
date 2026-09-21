@@ -1,0 +1,46 @@
+Function Main
+    Declare Integer MenghitungUlang, Ulang, TidakUlang, Y, N, jamMulai, menitMulai, jamSelesai, menitSelesai, totalMenitMulai, totalMenitSelesai, selisihMenit, durasiJam, durasiMenit, DurasiPerhitungan
+
+    Output "Menghitung Ulang? Y = 1, N = 0"
+    Input MenghitungUlang
+    If MenghitungUlang > 0
+        Output "Ulang"
+        Input Ulang
+        While Ulang > 0
+            Input jamMulai
+            Input menitMulai
+            Input jamSelesai
+            Input menitSelesai
+            Assign totalMenitMulai = jamMulai * 60 + menitMulai
+            Assign totalMenitSelesai = jamSelesai * 60 + menitSelesai
+            If totalMenitSelesai >= totalMenitMulai
+                Assign SelisihMenit = totalMenitSelesai - totalMenitMulai
+            Else
+                Assign selisihMenit = (24 * 60 - totalMenitMulai) + totalMenitSelesai
+            End
+            Assign DurasiJam = selisihMenit / 60
+            Assign DurasiMenit = selisihMenit mod 60
+            Output DurasiJam
+            Output DurasiMenit
+            Output "Ulang?lanjut = 1, Tidak lanjut= 0"
+            Input Ulang
+        End
+    Else
+        Output "Tidak Ulang"
+        Input jamMulai
+        Input menitMulai
+        Input jamSelesai
+        Input menitSelesai
+        Assign totalMenitMulai = jamMulai * 60 + menitMulai
+        Assign totalMenitSelesai = jamSelesai * 60 + menitSelesai
+        If totalMenitSelesai >= totalMenitMulai
+            Assign SelisihMenit = totalMenitSelesai - totalMenitMulai
+        Else
+            Assign selisihMenit = (24 * 60 - totalMenitMulai) + totalMenitSelesai
+        End
+        Assign DurasiJam = selisihMenit / 60
+        Assign DurasiMenit = selisihMenit mod 60
+        Output DurasiJam
+        Output DurasiMenit
+    End
+End
