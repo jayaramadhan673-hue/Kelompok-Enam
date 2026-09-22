@@ -1,0 +1,49 @@
+let pilihan = prompt("Masukkan ya untuk mulai menghitung atau no untuk berhenti:");
+
+if (pilihan == "ya") {
+
+    let ulang = "ya";
+
+    while (ulang == "ya") {
+
+        let mulai = prompt("Masukkan waktu mulai (HH:MM):");
+        let selesai = prompt("Masukkan waktu selesai (HH:MM):");
+
+      
+        let dataMulai = mulai.split(":");
+        let dataSelesai = selesai.split(":");
+
+        let jamMulai = Number(dataMulai[0]);
+        let menitMulai = Number(dataMulai[1]);
+
+        let jamSelesai = Number(dataSelesai[0]);
+        let menitSelesai = Number(dataSelesai[1]);
+
+        
+        let totalMulai = jamMulai * 60 + menitMulai;
+        let totalSelesai = jamSelesai * 60 + menitSelesai;
+
+        
+        if (totalSelesai < totalMulai) {
+            totalSelesai = totalSelesai + 1440;
+        }
+
+       
+        let durasi = totalSelesai - totalMulai;
+
+        let jam = Math.floor(durasi / 60);
+        let menit = durasi % 60;
+
+   
+        console.log("Mulai   : " + mulai);
+        console.log("Selesai : " + selesai);
+        console.log("Durasi  : " + jam + " jam " + menit + " menit");
+
+        
+        ulang = prompt("Mau menghitung lagi? (ya/no):"); }
+
+    console.log("Program selesai.");
+
+} else {
+    console.log("Program dihentikan.");
+}
