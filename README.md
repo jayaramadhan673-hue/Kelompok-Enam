@@ -81,7 +81,8 @@ https://drive.google.com/file/d/1fsE7mnibxUMRc0xIOU2mE2BoZ1mPHhZt/view?usp=shari
 ## 10. JavaScript Implementation
 
 The JavaScript implementation of the program is available in:
-
+LINK:
+https://www.programiz.com/online-compiler/47DoXYPvgOKJM 
 `program.js`
 
 ---
