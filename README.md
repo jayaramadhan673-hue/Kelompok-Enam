@@ -9,11 +9,11 @@
 
 | No. | Name | Student ID | Role |
 |---|---|---|---|
-| 1 | Adinda Hanin Ardanty | 2610312134 | Project Coordinator |
+| 1 | Muhammad Syahril Ramadhan | 2610312109 | Project Coordinator |
 | 2 | Gracia Agretta Br Silaen | 2610312116 | Algorithm |
 | 3 | Asila Syukria Abdulrahman Al-Kaf | 2610312128 | Flowchart |
 | 4 | Marselinus Christian Eka Jati |2610312129 | JavaScript |
-| 5 | Muhammad Syahril Ramadhan | 2610312109 | Testing & Documentation |
+| 5 |  Adinda Hanin Ardanty  | 26103121134 | Testing & Documentation |
 
 ---
 
