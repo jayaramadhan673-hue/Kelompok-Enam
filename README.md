@@ -25,36 +25,51 @@ Time & Duration Calculator
 
 ## 3. Project Description
 
-Program yang menghitung durasi waktu jam dan menit berlangsung yang pengguna masukkan yaittu jam dan menit waktu mulai dan jam dan menit waktu selesai.
----
+A program that calculates the elapsed time duration (hours and minutes) based on a start time and an end time entered by the user, in hours and minutes format. There is an option to recalculate the time. 
 
 ## 4. Objectives
 
 This project is designed to apply the following programming concepts:
-
+•	Variables
+•	Data types (string, number)
+•	Operators (arithmetic, comparison, modulo)
+•	Conditional statements (if/else)
+•	Loops (while)
+•	String methods (split)
+•	Type conversion (Number)
+•	JavaScript (prompt, console.log, Math.floor)
+	Variabel
+  
 ---
 
 ## 5. Input
 
 The program receives:
-
+•	The choice to start the program (yes/no)
+•	Start time (HH:MM format)
+•	End time (HH:MM format)
+•	The choice to repeat the calculation (yes/no)
 
 
 ---
 
 ## 6. Process
 
-The program compares the player's guess with the target number.
-
-If the guess is:
-
-
+The program converts the start and end times into total minutes, then:
+•	If the end time (in minutes) is less than the start time, it is assumed to pass midnight, so 1440 minutes are added
+•	Duration = total end minutes − total start minutes
+•	The duration is converted back into hours (division) and minutes (modulo)
+•	The process repeats as long as the user answers "yes" when asked to calculate again
 
 ---
 
 ## 7. Output
-
 The program displays:
+•	The start time entered
+•	The end time entered
+•	The duration in "X hours Y minutes" format
+•	The message "Program selesai." (Program finished) when the user stops repeating
+•	The message "Program dihentikan." (Program stopped) if the user chooses "no" at the start
 
 
 ---
