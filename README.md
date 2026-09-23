@@ -30,8 +30,8 @@ A program that calculates the elapsed time duration (hours and minutes) based on
 ## 4. Objectives
 
 This project is designed to apply the following programming concepts:
-•	Variables
 
+•	Variables
 •	Data types (string, number)
 
 •	Operators (arithmetic, comparison, modulo)
