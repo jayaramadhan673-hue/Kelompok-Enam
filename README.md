@@ -31,7 +31,9 @@ A program that calculates the elapsed time duration (hours and minutes) based on
 
 This project is designed to apply the following programming concepts:
 •	Variables
+
 •	Data types (string, number)
+
 •	Operators (arithmetic, comparison, modulo)
 •	Conditional statements (if/else)
 •	Loops (while)
